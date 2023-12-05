@@ -1,0 +1,21 @@
+[{
+    "fname": "elihu",
+    "lname": "shtutin",
+    "city":"ashkelon",
+    "photo":"https://www.starwars.com/databank/darth-vader"
+
+},
+{
+    "fname": "elad",
+    "lname": "mor",
+    "city":"ramat gan",
+    "photo":"https://falabella.scene7.com/is/image/Falabella/gsc_116388673_1465811_1?wid=800&hei=800&qlt=70"
+
+},
+{
+    "fname": "ben",
+    "lname": "megidish",
+    "city":"kiryat gat",
+    "photo":"https://www.disneyclips.com/images/images/roohappy3.gif"
+
+}]
