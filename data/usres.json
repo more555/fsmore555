@@ -1,21 +1,31 @@
-[{
+{ "users":
+[
+    {
     "fname": "elihu",
     "lname": "shtutin",
+    "username":"elihu123",
     "city":"ashkelon",
+    "password":12345678,
     "photo":"https://www.starwars.com/databank/darth-vader"
 
 },
 {
     "fname": "elad",
     "lname": "mor",
+    "username":"elad123",
     "city":"ramat gan",
+    "password":87654321,
     "photo":"https://falabella.scene7.com/is/image/Falabella/gsc_116388673_1465811_1?wid=800&hei=800&qlt=70"
 
 },
 {
     "fname": "ben",
     "lname": "megidish",
+    "username":"ben123",
     "city":"kiryat gat",
+    "password":98765432,
     "photo":"https://www.disneyclips.com/images/images/roohappy3.gif"
 
-}]
+}
+]
+}
