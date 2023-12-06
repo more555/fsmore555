@@ -5,16 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../styles/home.css">
 </head>
 
 <body>
-
-    <div class="header">
-        yyy
+    <div>
+        <button id="clear" class="clear"><img class="logOut" src="../media/logout.jpg" alt="logOut.icon" width="30px"
+                height="30px"></button>
     </div>
+
     <div class="container">
+        <div class="innerContainer">
 
+            <div class="profileImage">
+                <img id="imageProfile" src=".." alt="profile.img">
+                <input type="file" id="files">
+               
+                    <label class="iconFile" for="files"> <img class="icon" src="../media/photo editor icon.jpg" alt="photoEditor"
+                            height="50px" width="50px"></label>
+                
+            </div>
+
+            <div class="header">
+                <h1 id="header"></h1>
+            </div>
+            <div class="profileInfo">
+                <p class="info" id="fname"></p>
+                <p class="info" id="lname"></p>
+                <p class="info" id="city"></p>
+            </div>
+
+        </div>
     </div>
+
+
 </body>
+<script src="../scripts/home.js"> </script>
 
 </html>
