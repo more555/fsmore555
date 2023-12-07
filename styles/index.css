@@ -33,6 +33,7 @@ h1, h3{
 label, input{
     margin-top: 7px;
     padding: 5px;
+    font-weight: bolder;
 }
 button{
     width: fit-content;
@@ -51,4 +52,11 @@ a {
 a:hover{
     text-decoration: underline
     
+}
+
+#btn:hover{
+    background-color: rgba(0, 0, 255, 0.25);
+    color: #fff;
+    transition: 200ms;
+    border: 1px #fff solid;
 }

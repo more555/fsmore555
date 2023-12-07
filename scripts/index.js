@@ -13,35 +13,38 @@ xhr.onload = function () {
         let password = document.getElementById("password");
         if (uname.value == "" || password.value == "") {
             alert("MISSING DATA! PLEASE FILL ALL FIELDS")
-        }else{
-        for (let x in response) {
-            if (uname.value == response[x].username && password.value == response[x].password) {
-                flag = true;
-                localStorage.setItem("current", JSON.stringify(response[x]));
+        } else {
+            for (let x in response) {
+                if (uname.value == response[x].username && password.value == response[x].password) {
+                    flag = true;
+                    localStorage.setItem("current", JSON.stringify(response[x]));
+                }
+            }
+            if (flag == true) {
+                localStorage.setItem("users", JSON.stringify(response));
+                window.location.href = "../pages/home.html";
+                uname.value = "";
+                password.value = "";
+            } else {
+                alert("THE DATA ENTERED DOES NOT EXIST! PLEASE TRY AGAIN.")
             }
         }
-        if (flag == true) {
-            localStorage.setItem("users", JSON.stringify(response));
-            window.location.href = "../pages/home.html";
-        } else {
-            alert("THE DATA ENTERED DOES NOT EXIST! PLEASE TRY AGAIN.")
-        }}
     }
     document.getElementById("btn").addEventListener("click", login_handler)
 }
 xhr.send()
 const think = () => {
-    if(uname.value == ""){
+    if (uname.value == "") {
         alert("PLEASE ENTER YOUR USER NAME!")
-    } else{
+    } else {
         for (let x in response) {
-            if (uname.value == response[x].username){
-        alert("THINK HARD!")
-alert("THINK HERDER");
-alert("HOW ABOUT NOW?");
-alert("COME AGAIN WHEN U REMEMBER -;");
-alert(`JUST KIDDING, YUOR PASSWORD IS ${response[x].password}`);
-}
-}
-}
+            if (uname.value == response[x].username) {
+                alert("THINK HARD!")
+                alert("THINK HERDER");
+                alert("HOW ABOUT NOW?");
+                alert("COME AGAIN WHEN U REMEMBER -;");
+                alert(`JUST KIDDING, YOUR PASSWORD IS ${response[x].password}`);
+            }
+        }
+    }
 }
